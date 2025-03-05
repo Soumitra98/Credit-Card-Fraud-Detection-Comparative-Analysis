@@ -34,3 +34,6 @@
  ### Generalised command
 
  streamlit run <app_name>.py
+
+ #### Author - Soumitra Chakraborty
+ #### Contact Details - soumitra98@hotmail.com
