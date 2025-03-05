@@ -21,13 +21,13 @@
 
 
 
- ### Installation Command for the prerequisite libraries to run the Streamlit App
+ ## Installation Command for the prerequisite libraries to run the Streamlit App
 
  Python Requirement - 3.8 or higher 3.12 recommended (Evaluation was done primarily on Python 3.12)
 
  pip install -r resources.txt
 
- ### Command to Run the Streamlit App
+ ## Command to Run the Streamlit App
 
  streamlit run app4.py (As for this example the filename is 'app4.py')
 
