@@ -18,22 +18,32 @@
 ![cf](https://github.com/user-attachments/assets/8bfcded0-92e0-4fa8-91a2-e6e6b2e903dd)
 ![classification report](https://github.com/user-attachments/assets/c6dd76a2-cdd7-44f1-9184-d27988a62d3d)
 
+## Dataset for the analysis and a bit of discussion regarding the nature of the data
+
+### Dataset Source
+
+The dataset was procured from kaagle.com. The link to the dataset is as follows: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud.
+
+### A bit about the dataset
+
+This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. 
+
+It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 
+## Installation Command for the prerequisite libraries to run the Streamlit App
 
- ## Installation Command for the prerequisite libraries to run the Streamlit App
+Python Requirement - 3.8 or higher 3.12 recommended (Evaluation was done primarily on Python 3.12)
 
- Python Requirement - 3.8 or higher 3.12 recommended (Evaluation was done primarily on Python 3.12)
+pip install -r resources.txt
 
- pip install -r resources.txt
+## Command to Run the Streamlit App
 
- ## Command to Run the Streamlit App
+streamlit run app4.py (As for this example the filename is 'app4.py')
 
- streamlit run app4.py (As for this example the filename is 'app4.py')
+## Generalised command
 
- ### Generalised command
+streamlit run <app_name>.py
 
- streamlit run <app_name>.py
-
- #### Author - Soumitra Chakraborty
- #### Contact Details - soumitra98@hotmail.com
+### Author - Soumitra Chakraborty
+### Contact Details - soumitra98@hotmail.com
